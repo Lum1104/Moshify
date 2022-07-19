@@ -601,6 +601,7 @@ display: inline-block;
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
