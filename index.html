@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,11 +42,11 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading" data-aos="zoom-in-right">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
                 <a href="" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
                 <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
                 <img class="hero__image" src="images/banner.png" alt="">
@@ -52,7 +54,7 @@
         </div>
     </section>
     <!-- Domain -->
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-up">
         <header class="block__header">
             <h2>Starting at 9$ per month</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis odio quia consequuntur maiores
@@ -75,7 +77,7 @@
         </ul>
     </section>
     <!-- Cards -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
         <div class="grid grid--1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -142,7 +144,7 @@
             <h2>Host on the Cloud to Keep Growing</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, quis!</p>
         </header>
-        <article class="grid grid--1x2 feature">
+        <article class="grid grid--1x2 feature" data-aos="zoom-in">
             <div class="feature__content">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
@@ -154,14 +156,14 @@
                     repellendus distinctio voluptates soluta nemo vitae, dolores non!</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
                 <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
                 <img class="feature___image" src="images/easy@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="zoom-in">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#computer"></use>
@@ -179,7 +181,7 @@
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="zoom-in">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -209,7 +211,7 @@
                 <img src="images/ipad.png" alt="">
             </picture>
             <ul class="list">
-                <li>
+                <li data-aos="zoom-in-up">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
@@ -223,7 +225,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in-up">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
@@ -237,7 +239,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in-up">
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
@@ -255,7 +257,7 @@
         </div>
     </section>
     <!-- Testimonial -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in-up">
         <header class="block__header">
             <h2>What our Customer are Saying</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolores!</p>
@@ -295,7 +297,7 @@
         </div>
     </section>
 
-    <div class="callout callout--primary">
+    <div class="container callout callout--primary callout-signup">
         <div class="grid grid--1x2">
             <div class="callout__content">
                 <h2 class="callout__heading">Ready to Get Started?</h2>
@@ -312,12 +314,12 @@
         <footer class="block block--dark footer">
             <div class="container grid footer__sections">
                 <section class="collapsible collapsible--expanded footer__section">
-                    <header class="collapsible__header">
+                    <div class="collapsible__header">
                         <h2 class="collapsible__heading footer__heading">Product</h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                    </header>
+                    </div>
                     <div class="collapsible__content">
                         <ul class="list">
                             <li><a href="">Website Hosting</a></li>
@@ -327,12 +329,12 @@
                     </div>
                 </section>
                 <section class="collapsible footer__section">
-                    <header class="collapsible__header">
+                    <div class="collapsible__header">
                         <h2 class="collapsible__heading footer__heading">Company</h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                    </header>
+                    </div>
                     <div class="collapsible__content">
                         <ul class="list">
                             <li><a href="">About</a></li>
@@ -342,12 +344,12 @@
                     </div>
                 </section>
                 <section class="collapsible footer__section">
-                    <header class="collapsible__header">
+                    <div class="collapsible__header">
                         <h2 class="collapsible__heading footer__heading">Support</h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                    </header>
+                    </div>
                     <div class="collapsible__content">
                         <ul class="list">
                             <li><a href="">Contact</a></li>
@@ -357,12 +359,12 @@
                     </div>
                 </section>
                 <section class="collapsible footer__section">
-                    <header class="collapsible__header">
+                    <div class="collapsible__header">
                         <h2 class="collapsible__heading footer__heading">Domain</h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                    </header>
+                    </div>
                     <div class="collapsible__content">
                         <ul class="list">
                             <li><a href="">Domain Checker</a></li>
@@ -380,6 +382,10 @@
         </footer>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

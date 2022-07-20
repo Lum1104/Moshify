@@ -7,6 +7,10 @@
     --color-body-darker: #5c5577;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 /* Typography */
 ::selection {
     background: var(--color-primary);
@@ -60,6 +64,10 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+
+    body {
+        font-size: 1.8rem;
     }
 }
 
@@ -529,10 +537,6 @@ a {
 .callout {
     padding: 4rem;
     border-radius: 5px;
-    width: 80vw;
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
 }
 
 .callout--primary {
@@ -553,6 +557,10 @@ a {
 
 .callout__content {
     text-align: center;
+}
+
+.callout-signup {
+    transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
