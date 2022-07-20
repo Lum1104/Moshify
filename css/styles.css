@@ -1,6 +1,6 @@
 :root {
     --color-primary: #2584ff;
-    --color-secondary:#00d9ff;
+    --color-secondary: #00d9ff;
     --color-accent: #ff3400;
     --color-heading: #1B0760;
     --color-body: #918ca4;
@@ -24,7 +24,9 @@ body {
     color: var(--color-body);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--color-heading);
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -65,6 +67,7 @@ p {
 a {
     text-decoration: none;
 }
+
 .link-arrow {
     color: var(--color-accent);
     text-transform: uppercase;
@@ -185,78 +188,78 @@ a {
 
 /* Button */
 .btn {
-border-radius: 40px;
-border: 0;
-cursor: pointer;
-font-size: 1.8rem;
-font-weight: 600;
-margin: 1rem 0;
-outline: 0;
-padding: 2rem 4vw;
-text-align: center;
-text-transform: uppercase;
-white-space: nowrap;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    outline: 0;
+    padding: 2rem 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .btn .icon {
-width: 2rem;
-height: 2rem;
-margin-right: 1rem;
-vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
-background: var(--color-primary);
-color: #fff;
+    background: var(--color-primary);
+    color: #fff;
 }
 
 .btn--primary:hover {
-background: #3a8ffd;
+    background: #3a8ffd;
 }
 
 .btn--secondary {
-background: var(--color-secondary);
-color: #fff;
+    background: var(--color-secondary);
+    color: #fff;
 }
 
 .btn--secondary:hover {
-background: #05cdf0;
+    background: #05cdf0;
 }
 
 .btn--accent {
-background: var(--color-accent);
-color: #fff;
+    background: var(--color-accent);
+    color: #fff;
 }
 
 .btn--accent:hover {
-background: #ec3000;
+    background: #ec3000;
 }
 
 .btn--outline {
-background: #fff;
-color: var(--color-heading);
-border: 2px solid var(--color-heading);
+    background: #fff;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
 }
 
 .btn--outline:hover {
-background: var(--color-heading);
-color: #fff;
+    background: var(--color-heading);
+    color: #fff;
 }
 
 .btn--stretched {
-padding-left: 6rem;
-padding-right: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .btn--block {
-width: 100%;
-display: inline-block;
+    width: 100%;
+    display: inline-block;
 }
 
 @media screen and (min-width: 1024px) {
-.btn {
-    font-size: 1.5rem;
-}
+    .btn {
+        font-size: 1.5rem;
+    }
 }
 
 /* Inputs */
@@ -283,6 +286,7 @@ display: inline-block;
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -302,7 +306,8 @@ display: inline-block;
     overflow: hidden;
 }
 
-.card__header, .card__body {
+.card__header,
+.card__body {
     padding: 2rem 3rem;
 }
 
@@ -320,7 +325,7 @@ display: inline-block;
     background: #126de4;
 }
 
-.card--secondary .badge--secondary{
+.card--secondary .badge--secondary {
     background: #02cdf1;
 }
 
@@ -461,7 +466,7 @@ display: inline-block;
 @media screen and (min-width: 1024px) {
     .quote {
         font-size: 2rem;
-    } 
+    }
 
     .quote__author {
         font-size: 2.4rem;
@@ -498,17 +503,18 @@ display: inline-block;
     position: relative;
 }
 
-.testimonial__image > img {
+.testimonial__image>img {
     width: 100%;
 }
 
-.testimonial__image > .icon-container {
+.testimonial__image>.icon-container {
     position: absolute;
     top: 3rem;
     right: -32px;
 }
 
 @media screen and (min-width: 768px) {
+
     .testimonial .quote,
     .testimonial .quote__author {
         font-size: 2.4rem;
@@ -523,6 +529,10 @@ display: inline-block;
 .callout {
     padding: 4rem;
     border-radius: 5px;
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
 }
 
 .callout--primary {
@@ -615,8 +625,7 @@ display: inline-block;
 
 .block--dark h1,
 .block--dark h2,
-.block--dark h3
- {
+.block--dark h3 {
     color: #fff;
 }
 
@@ -636,6 +645,7 @@ display: inline-block;
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /* Navigation Bar */
 .nav {
     background: #000;
@@ -733,8 +743,9 @@ display: inline-block;
 }
 
 .block-domain__prices {
+    color: var(--color-heading);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -784,7 +795,7 @@ display: inline-block;
 }
 
 /* Showcase Block */
-.block-showcase__image > img {
+.block-showcase__image>img {
     width: 100%;
 }
 
@@ -797,14 +808,14 @@ display: inline-block;
         justify-self: end;
     }
 
-    .block-showcase__image > img {
+    .block-showcase__image>img {
         width: auto;
         max-width: 700px;
     }
 }
 
 /* Footer */
-.footer  {
+.footer {
     background: #232323;
     transition: color .3s;
     font-size: 2.1rem;
@@ -815,7 +826,7 @@ display: inline-block;
 }
 
 .footer a:hover {
-    color:#fff;
+    color: #fff;
 }
 
 .footer .list {
